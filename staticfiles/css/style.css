@@ -1,0 +1,49 @@
+.top-padding {
+	margin-top: 10px;
+}
+
+.user-message {
+	background-color: rgb(207, 218, 219);
+}
+
+.chat-message {
+	background-color: rgb(63, 224, 216);
+}
+
+.send-btn {
+	position: absolute;
+    top: 12px;
+    font-size: 30px;
+    color: grey;
+    right: 20px;
+}
+
+.send-btn:hover {
+	color: rgba(0, 128, 0, 0.61);
+}
+
+#text-box {
+	position: relative;
+	bottom: 8px;
+	width: 95%;
+}
+
+#text-box textarea {
+	border: 2px solid;
+}
+
+.navbar {
+	background-color: rgba(136, 14, 184, 0.4);
+}
+
+#app {
+	margin-left: 0px;
+}
+
+#app .card {
+	margin-bottom: 5px;
+}
+
+#app p {
+	margin-bottom: 0px;
+}
