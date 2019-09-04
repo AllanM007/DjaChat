@@ -11,13 +11,13 @@ chatbot = ChatBot(
     trainer='chatterbot.trainers.ChatterBotCorpusTrainer'
 )
 
-trainer = ChatterBotCorpusTrainer(chatbot)
+#trainer = ChatterBotCorpusTrainer(chatbot)
 
 trainerB = ListTrainer(chatbot)
 
-trainer.train(
-    "C:/Users/Allan/DjChat/djadjachat/chatterbot_corpus/data/english/"
-    )
+#trainer.train(
+#    "C:/Users/Allan/DjChat/djadjachat/chatterbot_corpus/data/english/"
+#    )
 
 trainerB.train([
 	    "How are you?",
@@ -40,12 +40,12 @@ trainerB.train([
         "You can start by paying your current loans slowly to completion and then later apply for one",
 	    "How can I save money",
         "You can cut unnecessary expenditures, pay bills on time, keenly monitor your accounts and avoid bad investments",
-	    "Can i get a loan",
+	    "my credit score is low",
+	    "You can work on that by paying pending loans gradually, monitoring your finances/bills and making payments on time.",
+        "Can i get a loan",
 	    "Yeah Sure, If your patascore credit score is good apply for one right away.",
 	    "I don't qualify for a loan",
         "You can take certain steps in improving your finances and credit score.Do you have a loan?"
-        "My patascore is low",
-	    "You can work on that by paying pending loans gradually, monitoring your finances/bills and making payments on time.",
 	    "How can I improve my credit score?",
         "You can improve your credit score by settling any pending loans you may have, Tracking your bill payments and reciepts for easier account management and accountability and by regularly checking your credit report to be aware of your credit situation",
         "I have a loan.",
@@ -62,7 +62,8 @@ trainerB.train([
 	    "How often should I take a loan?",
 	    "If you need the money and have a system in place to pay back the money, You can consult with us and get one right away",
 	    "When are you open?",
-	    "How can I save?",
+        "We are open from Monday to Friday 8:00 am - 5:00 pm and Saturdays from 8:00 am to 12:00 pm",
+        "How can I save?",
 	    "You can set up alerts to monitor you expenses and usage, this will help you handle your finances better and track profit/losses much more easily",
 	    "How can I save?",
 	    "You could cut off unnecessary expenditures and re-invest your profits into income-generating practices",
