@@ -22,7 +22,7 @@ window.onload = function () {
                   };
                   this.messages.push(message);
                   this.input = '';
-                  //just incase
+                
                   this.send_blank = false;
                   this.placeholder = "Send a message to the chatbot...";
                   
@@ -44,7 +44,7 @@ window.onload = function () {
                        })
                } else {
                    this.send_blank = true;
-                   this.placeholder = "Please put in some text";
+                   this.placeholder = "Text required";
                }
 
             },
@@ -54,7 +54,7 @@ window.onload = function () {
                     this.placeholder = "Send a message to the chatbot...";
                 } else {
                     this.send_blank = true;
-                    this.placeholder = "Please put in some text";
+                    this.placeholder = "Text required";
                 }
             },
         }

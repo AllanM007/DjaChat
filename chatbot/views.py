@@ -1,17 +1,69 @@
 from django.shortcuts import render, render_to_response
 from django.http import HttpResponse
 from chatterbot import ChatBot
-from chatterbot.trainers import ListTrainer
+from chatterbot.trainers import ChatterBotCorpusTrainer, ListTrainer
 from django.views.decorators.csrf import csrf_exempt
 import json
+
 
 chatbot = ChatBot(
     'Ron Obvious',
     trainer='chatterbot.trainers.ChatterBotCorpusTrainer'
-    )
-trainer = ListTrainer(chatbot)
+)
 
-trainer.train("chatbot.corpus.english")
+#trainer = ChatterBotCorpusTrainer(chatbot)
+
+#trainerB = ListTrainer(chatbot)
+
+#trainer.train(
+#    "C:/Users/Allan/DjChat/djadjachat/chatterbot_corpus/data/english/"
+#    )
+
+#trainerB.train([
+#	    "How are you?",
+#	    "I'm Fine.",
+#	    "Hello.",
+#	    "Hello, How can I help?.",
+#	    "Hi",
+#	    "Hi, How can I help?",
+#	    "I am good.",
+#	    "That is good to hear.",
+#        "Thanks",
+#        "I am glad I could help",
+#	    "Thank you.",
+#	    "You are welcome.",
+#	    "How can I improve my credit score.",
+#	    "Do you have any current loans?",
+#	    "How can I save money",
+#	    "You can cut unnecessary expenditures, pay bills on time, keenly monitor your accounts and avoid bad investments",
+#	    "Can i get a loan",
+#	    "Yeah Sure, If your patascore credit score is good apply for one right away.",
+#	    "I don't qualify for a loan",
+#        "You can take certain steps in improving your finances and credit score.Do you have a loan?"
+#        "My patascore is low",
+#	    "You can work on that by paying pending loans gradually, monitoring your finances/bills and making payments on time.",
+#	    "I have a loan.",
+#	    "I'd advise you to repay any pending loans immediately with the resources you have now and work to improve on that in future.Unserviced loans can badly hurt your credit score.",
+#	    "I need a loan",
+#	    "You can take a patascore credit test to check if you have good credit and are elligble for a loan.",
+#	    "How can I save money",
+#	    "You can start by paying your bills in time, this will reduce accumulation of debt which affects your credit.",
+#	    "How can I make payments on time",
+#	    "You can set up automatic payment systems from your main account to pay your bills or calender reminders if you are not comfortable with automatic payment systems.",
+#	    "I would suggest you stop borrowing and work hard to lower your your loan balance first",
+#	    "When can I qualify for a loan",
+#	    "Once you take a patascore credit test and have good results you can give us a call anytime ;-)",
+#	    "How often should I take a loan?",
+#	    "If you need the money and have a system in place to pay back the money, You can consult with us and get one right away",
+#	    "When are you open?",
+#	    "How can I save?",
+#	    "You can set up alerts to monitor you expenses and usage, this will help you handle your finances better and track profit/losses much more easily",
+#	    "How can I save?",
+#	    "You could cut off unnecessary expenditures and re-invest your profits into income-generating practices",
+#	    "Goodbye",
+#	    "Have A Good Day ;-)",
+#	])
+
 
 @csrf_exempt
 

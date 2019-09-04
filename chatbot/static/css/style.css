@@ -3,11 +3,11 @@
 }
 
 .user-message {
-	background-color: rgba(0, 67, 255, 0.33);
+	background-color: rgb(207, 218, 219);
 }
 
 .chat-message {
-	background-color: rgba(128, 0, 95, 0.35);
+	background-color: rgb(63, 224, 216);
 }
 
 .send-btn {
@@ -33,7 +33,7 @@
 }
 
 .navbar {
-	background-color: #0006;
+	background-color: rgba(136, 14, 184, 0.4);
 }
 
 #app {
