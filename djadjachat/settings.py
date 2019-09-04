@@ -28,6 +28,7 @@ SECRET_KEY = 'obvpj()xf=fubkkocghwuj4-zi_f!n2sbm1p=fn3qppg-)*q2i'
 DEBUG = True
 
 ALLOWED_HOSTS = ['chatbotv6.herokuapp.com']
+#ALLOWED_HOSTS = []
 
 
 # Application definition
