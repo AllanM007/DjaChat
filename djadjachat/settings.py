@@ -21,12 +21,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'obvpj()xf=fubkkocghwuj4-zi_f!n2sbm1p=fn3qppg-)*q2i'
+SECRET_KEY = os.environ.get('SECRET_PASS')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['chatbotv6.herokuapp.com']
 
 
 # Application definition
