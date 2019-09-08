@@ -93,5 +93,5 @@ def get_response(request):
         )
 
 def home(request, template_name="home.html"):
-        context = {"title":'Chatbot V1.0'}
+        context = {"title":'Chatbot v1.0'}
         return render_to_response(template_name,context)
