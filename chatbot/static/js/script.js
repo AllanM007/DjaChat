@@ -1,7 +1,7 @@
 window.onload = function () {
     var app = new Vue({
       delimiters: ['[[', ']]'],
-      el: '#chatty',
+      el: '#app',
       data: {
         messages: [],
         input: '',
