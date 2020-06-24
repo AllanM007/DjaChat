@@ -1,5 +1,4 @@
 # DjaChat
-Pezesha Project
 
 This chatbot uses python,django,vuejs,html and css to provide a responsive chatbot that allows you to interact in real time with the bot and get quick responses.
 
