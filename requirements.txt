@@ -6,7 +6,7 @@ ChatterBot==1.0.5
 chatterbot-corpus==1.2.0
 colorama==0.4.1
 cymem==2.0.2
-Django==2.2.13
+Django==2.2.27
 gunicorn==19.9.0
 idna==2.8
 isort==4.3.21
